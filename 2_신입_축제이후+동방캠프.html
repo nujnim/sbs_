@@ -11,27 +11,39 @@
 
 <body>
     <h1>  
-        <a href="main_.html" style="color: black;text-decoration: none;">
+        <a href="main_.html" style="color: black; text-decoration: none;" id='head'>
             <img src="https://github.com/nujnim/sbs_/blob/main/content/main_.jpg?raw=true" width="8%" id="pic"> 
             SBS_history
             <img src="https://github.com/nujnim/sbs_/blob/main/content/main_.jpg?raw=true" width="8%" id="pic">
          </a>
     </h1>
+    <input type='button' value="night" onclick="
+    // 아이디가 셀렉터이면 body가 아닌 #id_name 으로 적어주면됨
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color= 'white';            
+        document.querySelector('#head').style.color='white';
+    ">
+    <input type='button' value="day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color= 'black';            
+        document.querySelector('#head').style.color='black';
+    ">
+    
     <div id="grid">
-
         <ol>
-            <li><a href="0_신입_축제전.html"> 신입 축제전 </a></li> 
-            <li><a href="1_신입_축제.html"> 신입 축제 </a></li>
-            <li><a href="2_신입_축제이후+동방캠프.html"> 신입 후반(동캠) </a></li>
-            <li><a href="3_하늘아래펜션.html"> 하늘아래펜션 </a></li>
-            <li><a href="4_여름방학.html"> 여름방학 </a></li>
-            <li><a href="5_1학년2학기+정발.html"> 2013하반기 </a></li>
-            <li><a href="6_전역후_15년도.html"> 15년도 </a></li>
-            <li><a href="7_16년도~19년도.html"> 16년도~19년도 </a></li>
-            <li><a href="8_19년도~20년도.html"> 19년도~20년도 </a></li>
-            <li><a href="9_비교적최근.html"> 21년도 </a></li>
-        </ol>
+            
+            <li><input type='button' value="신입 축제전" onclick="location.href = '0_신입_축제전.html'"></li>
+            <li><input type='button' value="신입 축제" onclick="location.href = '1_신입_축제.html'"></li>
+            <li><input type='button' value="신입 후반(동캠)" onclick="location.href = '2_신입_축제이후+동방캠프.html'"></li>
+            <li><input type='button' value="하늘아래펜션" onclick="location.href = '3_하늘아래펜션.html'"></li>
+            <li><input type='button' value="여름방학" onclick="location.href = '4_여름방학.html'"></li>
+            <li><input type='button' value="2013하반기" onclick="location.href = '5_1학년2학기+정발.html'"></li>
+            <li><input type='button' value="15년도" onclick="location.href = '6_전역후_15년도.html'"></li>
+            <li><input type='button' value="16년도~19년도" onclick="location.href = '7_16년도~19년도.html'"></li>
+            <li><input type='button' value=" 19년도~20년도" onclick="location.href = '8_19년도~20년도.html'"></li>
+            <li><input type='button' value="21년도" onclick="location.href = '9_비교적최근.html'"></li>
 
+        </ol>
 
         <div id="article">
             <h2> 축제 이후 동방캠프 개막 </h2>

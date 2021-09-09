@@ -5,46 +5,15 @@
     <!-- 한글이 깨질경우 아래 추가 -->
     <meta charset="utf-8">
     <title>SBS_history</title>
+</head>
 
-    <script>
-        function night_day_handler(self){
-            var target = document.querySelector('body');
-            var head_ = document.querySelector('#head');
-    
-            if(self.value==='night'){
-            // 아이디가 셀렉터이면 body가 아닌 #id_name 으로 적어주면됨
-                target.style.backgroundColor='black';
-                target.style.color= 'white';            
-                head_.style.color='white';
-                self.value = 'day';
-    
-                var a_lst = document.querySelectorAll('a');
-                var i = 0;
-                while(i < a_lst.length){
-                console.log(a_lst[i]);
-                a_lst[i].style.color = 'powderblue';
-                i = i + 1;
-                }
-    
-            } else {
-                target.style.backgroundColor='white';
-                target.style.color= 'black';            
-                head_.style.color='black';
-                self.value = 'night';
-                var a_lst = document.querySelectorAll('a');
-                var i = 1;
-                while(i < a_lst.length){
-                console.log(a_lst[i]);
-                a_lst[i].style.color = 'blue';
-                i = i + 1;
-                }
-            }
-        }
-        </script>
+
+    <script src="./color.js"></script>
 
     <link rel="stylesheet" href="./css/style.css">
 
-</head>
+    
+<input type='button' value="night" onclick="night_day_handler(this);" id="night_day" >
 
 <body>
     <h1>  
@@ -55,11 +24,6 @@
          </a>
     </h1>
 
-    <div id="grid">
-    <input type='button' value="night" onclick="
-    night_day_handler(this)
-    ">
-    </div>
     
     <div id="grid">
         

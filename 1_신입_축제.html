@@ -4,10 +4,16 @@
 <head>
     <!-- 한글이 깨질경우 아래 추가 -->
     <meta charset="utf-8">
-    <title>미녀와 2저롱만</title>
+    <title>SBS_history</title>
 </head>
 
+
+<script src="./color.js"></script>
+
 <link rel="stylesheet" href="./css/style.css">
+
+
+<input type='button' value="night" onclick="night_day_handler(this);" id="night_day" >
 
 <body>
     <h1>  
@@ -18,39 +24,6 @@
          </a>
     </h1>
 
-    <input type='button' value="night" onclick="
-    var target = document.querySelector('body');
-    var head_ = document.querySelector('#head');
-
-    if(this.value==='night'){
-    // 아이디가 셀렉터이면 body가 아닌 #id_name 으로 적어주면됨
-        target.style.backgroundColor='black';
-        target.style.color= 'white';            
-        head_.style.color='white';
-        this.value = 'day';
-
-        var a_lst = document.querySelectorAll('a');
-        var i = 0;
-        while(i < a_lst.length){
-        console.log(a_lst[i]);
-        a_lst[i].style.color = 'powderblue';
-        i = i + 1;
-        }
-
-    } else {
-        target.style.backgroundColor='white';
-        target.style.color= 'black';            
-        head_.style.color='black';
-        this.value = 'night';
-        var a_lst = document.querySelectorAll('a');
-        var i = 0;
-        while(i < a_lst.length){
-        console.log(a_lst[i]);
-        a_lst[i].style.color = 'blue';
-        i = i + 1;
-        }
-    }
-    ">
     
     <div id="grid">
         <ol>

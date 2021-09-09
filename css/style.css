@@ -22,6 +22,15 @@ body {
 #grid {
     display: grid;
     grid-template-columns: 200px 1fr;
+    margin-left: 10px;
+
+}
+
+
+#night_day{
+    margin-left: 10px;
+    margin-top : 10px;
+    width:70px;
 }
 
 #grid ol {
